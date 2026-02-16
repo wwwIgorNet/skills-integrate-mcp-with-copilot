@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -26,6 +27,47 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+.auth-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.auth-dropdown {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 180px;
+  padding: 10px;
+  z-index: 20;
+}
+
+.auth-dropdown p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.auth-dropdown button {
+  width: 100%;
+  margin-top: 6px;
 }
 
 main {
@@ -190,6 +232,41 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  width: min(92vw, 420px);
+}
+
+.modal-content h3 {
+  margin-bottom: 12px;
+  color: #1a237e;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.secondary-btn {
+  background-color: #757575;
+}
+
+.secondary-btn:hover {
+  background-color: #616161;
 }
 
 footer {
